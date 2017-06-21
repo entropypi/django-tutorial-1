@@ -8,10 +8,24 @@
 		</div>
 	
 		<div>
-			<p> published: 1/1/1</p>
-			<h2>First Post</h2>
-			<p>asd asd few e fsdkld eslf</p>
+			{{ posts }}
 		</div>
-	
+
+		<div>
+			{% for post in posts %}
+				{{ post }}<br/>
+			{% endfor %}
+		</div>
+
+		<div>
+			{% for post in posts %}
+				<div><hr/>
+					<p>published: {{ post.publish_date }}</p>
+					<h1><a href="">{{ post.title }}</a></h1>
+					<p>{{post.text|linebreaksbr}}</p>
+
+				</div>
+			{% endfor %}
+		</div>	
 	</body>
 </html>
