@@ -25,7 +25,7 @@ SECRET_KEY = 'gqzp=+dl8+b*1w2ih+@x#)yh(w*ol#%7hk68z@#5+525@p1rn+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'entropy.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'entropypi.pythonanywhere.com']
 
 
 # Application definition
