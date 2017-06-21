@@ -1,0 +1,18 @@
+source bin/activate
+deactivate
+
+sudo chown pi:pi *
+sudo chmod 777 *
+
+sudo django-admin startproject myiweb
+sudo python manage.py startapp blog
+sudo python manage.py runserver
+
+sudo python manage.py makemigrations blog
+sudo python manage.py migrate blog
+
+sudo python manage.py createsuperuser
+
+git init
+git config --global user.name "entropypi"
+git config --global user.email "3n7r0py.pi@gmail.com"
