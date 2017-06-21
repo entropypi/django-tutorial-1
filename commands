@@ -16,3 +16,10 @@ sudo python manage.py createsuperuser
 git init
 git config --global user.name "entropypi"
 git config --global user.email "3n7r0py.pi@gmail.com"
+git status
+git add --all
+git commit -m "My Django Blog, first commit"
+git remote add origin https://github.com/entropypi/django-tutorial-1.git
+git push -u origin master
+git clone https://github.com/entropypi/django-tutorial-1.git
+
